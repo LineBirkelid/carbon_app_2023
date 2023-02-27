@@ -1,71 +1,68 @@
+<!-- Colors 
+Home, section 1 (header, background): #698269
+Home, section 1 (header, boxes): #B99B6B
+Home, section 2 (developers, background): #F1DBBF 
+Home, section 2 (developers, boxes): #AA5656 
+*/ -->
+
 {% extends "layout.html" %}
 {% block content %}
-  
+
 <!-- Header -->
 <section class="section_header_methodology">
     <div class="container">
   
       <div class="header">
         <div class="box"> 
-          <h1 style="font-size:55px;"><span class="text-logo"> Methodology</span></h1>
+        <h1 style="font-size:55px;"><span class="text-logo"> Methodology</span></h1>
           <p style="text-align:left;">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat dolores quos asperiores repellendus facilis cum illo aperiam odit doloremque nostrum. Totam excepturi labore voluptatibus iusto sapiente quisquam consectetur optio magnam voluptates omnis vel officia alias distinctio quas laborum reiciendis ratione inventore veniam, cupiditate doloribus dolore, eius natus a. Magni inventore consequuntur voluptas reprehenderit perferendis! Molestias aspernatur rem autem aut temporibus.
+              The methodology for the Carbon App is based on real data on carbon emission. The students has been critical and search for sicens based data. The development of the formulas are made by the students and are explained. We hope that this Carbon app will help people to be more aware of their carbon emission on a daily basis, and hopefully reduce it.
           </p>
           <div class="container_buttons_links_header">
             <div class="btn">
-                <a href="#" class="btn btn-primary btn-lg mr-2", style="background-color:#007bff;">Paper</a>
+                <a href="https://docs.google.com/document/d/1LB7sJ2ddfoHPvye0LtYxO5xrmzEQeNHj2j6Ac6Gt_8c/edit?usp=sharing" class="btn btn-primary btn-lg mr-2", style="background-color:#FF7F00;" target="_blank">Paper</a>
             </div>
             <div class="btn">
-                <a href="{{url_for('carbon_app.carbon_app_home')}}" class="btn btn-primary btn-lg mr-2", style="background-color:#007bff;">Carbon App</a>
+                <a href="{{url_for('carbon_app')}}" class="btn btn-primary btn-lg mr-2", style="background-color:#FF7F00;">Carbon App</a>
             </div>
           </div>  
         </div>
         <div class="box">
           <img 
-            src="{{url_for('static', filename='icons/methodology1.svg')}}"
+            src="{{url_for('static', filename='icons/methodology5.svg')}}"
             width="325" 
-            height="325"
+            height="337"
             alt=""/>
         </div>
       </div>
-      
     </div>
 </section> 
 
 <!-- Methodology -->
 <section class="section_body_methodology">
     <div class="container">
-  
-        <div class="methodology" style="display:block;">
-            <h1 style="text-align:center;"> Methodology</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            </p>      
+        <br>
+        <br>
+        <div class="methodology" style="color: #40574D; display:block;">
+            <h1 style="text-align:center;"> Formulas used to develope the Carbon App </h1>      
         </div>
-
-        <div class="methodology" style="display:block;">
-            <h1 style="text-align:center;"> Our numbers and formulas</h1>
-            <p>
-              We are going to studty some \(\LaTeX ~ formulas\) that could be useful for our project:
-            </p> 
-        </div>
+        <br>
 
         <!--Enumerated list (table with two columns)-->
         <div class="methodology"> 
-            <div class="box_table2" style="height:200px;">
+            <div class="box_table2" style="height:280px;">
                 <ol start="1">
                     <li>
-                        <h4>Mathematical expressions 1</h4>
-                        <p class="text-left">
-                            Mathematical expressions \( x = {-b \pm \sqrt{b^2-4ac} \over 2a} \) inside text.
-                            <br>
-                            Mathematical expressions outside text:
-                            \[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \]
-                        </p>
+                        <h4>Gasoline consumption for an electric car</h4>
+                        <p>We know that we need 0,4kg of Co2 to produce 1kWh and we know</p>
+                        <p>An average car battery is 73kWh so we need around 30kg of co2 to fully charge a battery</p>
+                        <p class="text-left">                            
+                            In conclusion:
+                            \[ CO_2 Produced = {73 kWh\cdot0.4 kg CO_2 = 30.04 kg} \]
                     </li>
                 </ol>                        
             </div>
-            <div class="box_table2" style="height:200px;">
+            <div class="box_table2" style="height:280px;">
                 <ol start="2">
                     <li>
                         <h4>Mathematical expressions 2</h4>
