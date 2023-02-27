@@ -17,16 +17,16 @@ p {
   }
   /* Section header */
   .section_header_carbon_app {
-    background-color:#698269;
+    background-color:#BACEC1;
   }
   .header_carbon_app {
     display: flex;  
     align-items: start;
-    background: #698269;
+    background: #BACEC1;
   }
   .header_carbon_app .box {
     flex: 1;
-    background: #698269;
+    background: #BACEC1;
     color: #000;
     border-radius: 10px;
     margin: 20px 10px;
