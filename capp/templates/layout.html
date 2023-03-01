@@ -26,6 +26,7 @@
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='methodology.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='carbon_app.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='user.css') }}">
 
       <!-- To activate media queries in devices -->
       <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
@@ -56,8 +57,14 @@
                         <a href="{{url_for('methodology.methodology_home')}}"> <i class="fa-solid fa-info"></i> Methodology</a>
                     </li>
                     <li>
-                        <a href="{{url_for('carbon_app.carbon_app_home')}}"> <i class="fa-solid fa-calculator"></i> Carbon Calculator</a>
+                        <a href="{{url_for('carbon_app.carbon_app_home')}}"> <i class="fa-solid fa-calculator"></i> Carbon App</a>
                     </li>
+                    <li>
+                      <a href="{{url_for('users.register')}}"> <i class="fa-regular fa-address-card"></i> Register</a>
+                  </li>
+                    <li>
+                      <a href="{{url_for('users.login')}}"> <i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+                  </li>
                 </ul>
               </nav> 
             </div>
